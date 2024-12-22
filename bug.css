@@ -1,0 +1,1 @@
+The CSS property `calc()` is used incorrectly, resulting in unexpected layout behavior.  Specifically, the calculation `calc(100% - 20px)` within a `width` property does not account for the element's padding or border.
