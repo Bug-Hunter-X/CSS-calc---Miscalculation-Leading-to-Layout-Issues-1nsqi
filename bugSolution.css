@@ -1,0 +1,8 @@
+The issue is solved by including the padding and border in the `calc()` function.  The correct calculation should be:
+
+```css
+width: calc(100% - 20px - 10px - 10px); /*Subtracting 10px for padding and 10px for border*/
+/* or */
+width: calc(100% - 20px - 2 * 10px); /* Assuming padding and border are equal*/ 
+```
+This ensures the element's width is correctly calculated, regardless of its padding and border.
